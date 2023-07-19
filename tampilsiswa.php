@@ -35,15 +35,15 @@
     </style>
 </head>
 <body>
-    <a href = 'tambahsiswa.php' class="button"> Tambah Siswa</a>  
-    <table>    	
+    <a href = 'tambahsiswa.php' class="button"> Tambah Siswa</a>
+    
+    <table>    	        
         <?php
 		include "koneksi.php";
 
 		$q = "select * from siswa";
 		$ex = mysqli_query($koneksi,$q);
-
-		//echo "";
+		
 		echo "<table border = 1>";
 		echo "<tr>
 		<th>NIS</th><th>Nama Siswa</th><th>Jenis Kelamin</th>
@@ -63,7 +63,7 @@
 		echo "</table>";
 		?>
 		<br>
-		<a href = "index.php" class="button">Kembali</a>
+		<a href = "dashboard.php" class="button">Kembali</a>
 	</table>
 </body>
 </html>

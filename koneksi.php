@@ -1,9 +1,9 @@
 
 <?php
-$servername = "localhost";
-$database = "penerimaan_siswa_baru";
-$username = "root";
-$password = "";
+$servername = "sql307.infinityfree.com";
+$database = "if0_34551565_penerimaan_siswa_baru";
+$username = "if0_34551565";
+$password = "hB9KoDNHhORa";
 
 // buat koneksi
 

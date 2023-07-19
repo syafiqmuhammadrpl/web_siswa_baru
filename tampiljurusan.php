@@ -57,7 +57,7 @@
 		echo "</table>";
 		?>
 		<br>
-		<a href = "index.php" class="button">Kembali</a>
+		<a href = "dashboard.php" class="button">Kembali</a>
 	</table>
 </body>
 </html>

@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>TELAH DIBUKA | PENERIMAAN SISWA BARU SMKN HALU SANA SINI 52</title>
-    <meta charset="UTF-8">
-    <meta name="description" contents="Genap">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>FORM LOGIN</title>
+    <style>
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .form-container input[type="text"],
+        .form-container input[type="password"]
+        {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        
+        .form-container input[type="submit"],
+        .form-container input[type="reset"]        
+        {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .form-container input[type="submit"]:hover,
+        .form-container input[type="reset"]:hover        
+        {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="title">SMKN HALU SANA SINI 52</h1>
-        <h3 class="desc">Menerima siswa baru tapi tidak menerima uang suap baru.. chuakzz</h3>
-        <nav id="navigation">
-            <ul>
-                <li><a href="index.php?page=home">Home</a></li>
-                <li><a href="tampilsiswa.php?page=siswa">Siswa</a></li>
-                <li><a href="tampilpanitia.php?page=panitia">Panitia</a></li>
-                <li><a href="tampiljurusan.php?page=jurusan">Jurusan</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="form-container">
+        <h2>Form Login</h2>
+        <form action="proses_login.php" method="post">
+             <label for="username">Username:</label>
+             <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>     
+            
+            <input type = "submit" name="bok" value="Simpan"/>
+            <input type = "reset" name="reset" value="Reset"/>
+            <br>
+            <br>            
+        </form>
+    <br>
+        username = "admin"<br>
+        password = "admin123"
     </div>
-    <footer>
-        &copy Copyright Kelompok Prima 2023 | Kelompok Genap tapi Prima
-    </footer>
 </body>
 </html>

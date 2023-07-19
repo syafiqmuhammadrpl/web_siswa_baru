@@ -9,7 +9,7 @@ if (isset($_POST['bok'])) {
 	$jenis_kelamin = $_POST['jenkel'];
 	$alamat = $_POST['alamat'];
 	$asal_sekolah = $_POST['asal_sekolah'];
-	$kode_progdi = $_POST['kode_progdi'];
+	$kode_progdi = $_POST['jurusan'];
 
  
 // update data ke database
